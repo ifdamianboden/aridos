@@ -803,3 +803,64 @@ footer {
   .topnav .icon {
     display: none;
   }
+
+  .formulario-contacto-formspree {
+    max-width: 500px; /* Limita el ancho del formulario */
+    margin: 20px auto; /* Centra el formulario y añade margen */
+    padding: 20px;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-family: sans-serif; /* Fuente legible */
+}
+
+.formulario-contacto-formspree label {
+    display: block; /* Cada label en una línea nueva */
+    margin-bottom: 15px;
+}
+
+.formulario-contacto-formspree label span {
+    display: block; /* El texto del label en una línea separada */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-contacto-formspree input[type="name"],
+.formulario-contacto-formspree input[type="tel"],
+.formulario-contacto-formspree textarea {
+    width: calc(100% - 12px); /* Ancho completo con padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+formulario-contacto-formspree textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 150px;
+}
+
+.formulario-contacto-formspree button[type="submit"] {
+    background-color: #007bff; /* Color azul para el botón */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Botón ancho completo */
+}
+
+.formulario-contacto-formspree button[type="submit"]:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .formulario-contacto-formspree {
+        padding: 15px;
+        margin: 10px;
+    }
+}
