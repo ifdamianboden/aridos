@@ -44,15 +44,85 @@ nav{
     padding: 30px 50px 0 0;
 }
 
-nav > a{
-    color:#fff;
-    font-weight: 300;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
+}
+
+.redes {
+    display: flex;
+}
+
+.red-social {
+    font-size: 20px;
     margin-right: 10px;
 }
 
-nav > a:hover{
-    text-decoration: underline;
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para el menú desplegable */
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+}
+
+.menu a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+/* Estilos para el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .redes {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    #menu-toggle:checked + .menu {
+        display: flex;
+    }
 }
 
 header .textos-header{
@@ -696,5 +766,101 @@ footer {
 @media (max-width: 768px) {
     .new-contacto .contacto-cont {
         grid-template-columns: 1fr; /* Apila los elementos en pantallas pequeñas */
+    }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #807e7e;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .formulario-contacto-formspree {
+    max-width: 500px; /* Limita el ancho del formulario */
+    margin: 20px auto; /* Centra el formulario y añade margen */
+    padding: 20px;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-family: sans-serif; /* Fuente legible */
+}
+
+.formulario-contacto-formspree label {
+    display: block; /* Cada label en una línea nueva */
+    margin-bottom: 15px;
+}
+
+.formulario-contacto-formspree label span {
+    display: block; /* El texto del label en una línea separada */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-contacto-formspree input[type="name"],
+.formulario-contacto-formspree input[type="tel"],
+.formulario-contacto-formspree textarea {
+    width: calc(100% - 12px); /* Ancho completo con padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+formulario-contacto-formspree textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 150px;
+}
+
+.formulario-contacto-formspree button[type="submit"] {
+    background-color: #007bff; /* Color azul para el botón */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Botón ancho completo */
+}
+
+.formulario-contacto-formspree button[type="submit"]:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .formulario-contacto-formspree {
+        padding: 15px;
+        margin: 10px;
     }
 }
