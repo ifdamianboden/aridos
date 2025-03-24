@@ -110,7 +110,7 @@ nav a {
 /* Estilos para el menú en pantallas pequeñas */
 @media (max-width: 768px) {
     .logotipo{
-        display: flex;
+        display: none;
     }
     nav {
         flex-direction: column;
