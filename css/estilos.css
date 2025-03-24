@@ -845,7 +845,8 @@ footer {
         display: block;
         text-align: left;
         width: 100%;  /* Asegura que los enlaces ocupen todo el ancho */
-        padding: 10px;
+        padding: 2px;
+        margin-left: 7%;
         box-sizing: border-box; /* Incluye padding en el ancho */
     }
     .topnav.responsive {
