@@ -829,15 +829,10 @@ footer {
 
     .topnav.responsive {
         position: relative;
-  display: inline-block;
-  margin: 0 1px;
-  padding: 0 0px;
     }
 
     .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+        float: right ;
     }
 
     .topnav.responsive a {
@@ -845,6 +840,11 @@ footer {
         display: block;
         text-align: left;
         width: 100%; /* Asegura que los enlaces ocupen todo el ancho */
+        padding: 10px;
+    }
+    .topnav.responsive {
+        width: 100%; /* Asegura que el menú ocupe todo el ancho */
+        box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
     }
 }
 
