@@ -821,6 +821,9 @@ footer {
 
 /* Estilos para modo responsive */
 @media screen and (max-width: 600px) {
+    .logotipo{
+        display: none;
+    }
     .topnav a {
         display: flex; /* Oculta todos los enlaces */
     }
