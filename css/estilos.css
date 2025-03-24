@@ -824,7 +824,7 @@ footer {
         display: none;
     }
     .topnav a {
-        display: flex; /* Oculta todos los enlaces */
+        display: none; /* Oculta todos los enlaces */
     }
 
     .topnav a.icon {
