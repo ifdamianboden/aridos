@@ -819,7 +819,7 @@ footer {
 /* Estilos para modo responsive */
 @media screen and (max-width: 600px) {
     .topnav a {
-        display:none; /* Oculta todos los enlaces */
+        display:flex; /* Oculta todos los enlaces */
     }
 
     .topnav a.icon {
