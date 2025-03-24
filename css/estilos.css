@@ -110,7 +110,7 @@ nav a {
 /* Estilos para el menú en pantallas pequeñas */
 @media (max-width: 768px) {
     nav {
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
         align-items: flex-start;
     }
 
@@ -126,13 +126,36 @@ nav a {
         display: block;
         position: absolute;
         top: 10px;
-        left: 100px;
+        right: 20px; /* Coloca el icono del menú en la esquina superior derecha */
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #menu-toggle {
+        display: none;
     }
 
     #menu-toggle:checked + .menu {
         display: flex;
         width: 100%; /* Asegura que el menú ocupe todo el ancho */
         left: 0; /* Asegura que comience desde el borde izquierdo */
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 40px;
     }
 }
 
