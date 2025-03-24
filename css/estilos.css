@@ -126,13 +126,11 @@ nav a {
         display: block;
         position: absolute;
         top: 10px;
-        left: 20px;
+        right: 20px;
     }
 
     #menu-toggle:checked + .menu {
         display: flex;
-        width: 100%; /* Asegura que el menú ocupe todo el ancho */
-        left: 0; /* Asegura que comience desde el borde izquierdo */
     }
 }
 
@@ -819,41 +817,27 @@ footer {
 /* Estilos para modo responsive */
 @media screen and (max-width: 600px) {
     .topnav a {
-        display:flex; /* Oculta todos los enlaces */
+        display: flex; /* Oculta todos los enlaces */
     }
 
     .topnav a.icon {
+        float: right;
         display: block; /* Muestra el icono del menú */
-        position: absolute;
-        right: 1px;  /* Ubica el ícono a la derecha */
-        top: 1px;    /* Ajusta la posición superior */
     }
 
-    .topnav.responsive {
-        position: relative;
-        width: 100%;
+    .topnav.responsive a {
+        display: block; /* Muestra los enlaces cuando .responsive está activo */
+        float: none;
+        text-align: left;
     }
 
     .topnav.responsive a.icon {
         position: absolute;
-        right: 1px; /* Asegura que el icono esté alineado a la derecha */
-        top: 1px;
-    }
-
-    .topnav.responsive a {
-        float: none;  /* Quita el float */
-        display: block;
-        text-align: right;
-        width: 100%;  /* Asegura que los enlaces ocupen todo el ancho */
-        padding: 20px;
-        margin-right: -70%;
-        box-sizing: border-box; /* Incluye padding en el ancho */
-    }
-    .topnav.responsive {
-        width: 100%; /* Asegura que el menú ocupe todo el ancho */
-        box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+        right: 0;
+        top: 0;
     }
 }
+
 
   
   .formulario-contacto-formspree {
