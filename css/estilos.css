@@ -132,7 +132,7 @@ nav a {
     #menu-toggle:checked + .menu {
         display: flex;
         width: 100%; /* Asegura que el menú ocupe todo el ancho */
-        left: 0; /* Asegura que comience desde el borde izquierdo */
+        left: 50%; /* Asegura que comience desde el borde izquierdo */
     }
 }
 
