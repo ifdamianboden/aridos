@@ -119,7 +119,7 @@ nav a {
 
     .redes {
         margin-bottom: 10px;
-        flex-direction: column;
+    
     }
 
     nav a {
@@ -828,8 +828,8 @@ footer {
     }
 
     .topnav a.icon {
-        float: right;
-        display: block; /* Muestra el icono del menú */
+        display: block;
+        text-align: right;
     }
 
     .topnav.responsive a {
