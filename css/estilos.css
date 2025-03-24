@@ -843,7 +843,7 @@ footer {
     .topnav.responsive a {
         float: none;  /* Quita el float */
         display: block;
-        text-align: left;
+        text-align: right;
         width: 100%;  /* Asegura que los enlaces ocupen todo el ancho */
         padding: 20px;
         margin-right: -70%;
