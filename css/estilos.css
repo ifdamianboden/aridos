@@ -823,24 +823,30 @@ footer {
     }
 
     .topnav a.icon {
-        float: right;
         display: block; /* Muestra el icono del menú */
+        position: absolute;
+        right: 10px;  /* Ubica el ícono a la derecha */
+        top: 10px;    /* Ajusta la posición superior */
     }
 
     .topnav.responsive {
         position: relative;
+        width: 100%;
     }
 
     .topnav.responsive a.icon {
-        float: right ;
+        position: absolute;
+        right: 10px; /* Asegura que el icono esté alineado a la derecha */
+        top: 10px;
     }
 
     .topnav.responsive a {
-        float: none;
+        float: none;  /* Quita el float */
         display: block;
         text-align: left;
-        width: 100%; /* Asegura que los enlaces ocupen todo el ancho */
+        width: 100%;  /* Asegura que los enlaces ocupen todo el ancho */
         padding: 10px;
+        box-sizing: border-box; /* Incluye padding en el ancho */
     }
     .topnav.responsive {
         width: 100%; /* Asegura que el menú ocupe todo el ancho */
