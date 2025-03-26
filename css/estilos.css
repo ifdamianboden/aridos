@@ -273,7 +273,7 @@ footer {
 @media (max-width: 768px) {
 
     .textos-header h1 {
-        display: none;
+        display: flex;
     }
 
     
@@ -297,6 +297,12 @@ footer {
 
     .textos-encima-portada h2 {
         font-size: 1.2rem;
+    }
+
+    .red-social {
+        color: var(--text-color);
+        font-size: 1.5rem;
+        margin-top: 40%;
     }
 }
 
