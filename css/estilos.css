@@ -319,3 +319,11 @@ footer {
 .formulario-contacto-formspree {
     width: 45%;
 }
+
+.producto p {
+    font-size: 1rem; /* Ajusta el tamaño de fuente según necesites */
+    color: #555; /* Ajusta el color del texto según necesites */
+    margin-bottom: 15px; /* Ajusta el margen inferior según necesites */
+    text-align: left; /* Alinea el texto a la izquierda */
+    line-height: 1.6; /* Ajusta el espaciado entre líneas */
+}
