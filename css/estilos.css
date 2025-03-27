@@ -271,12 +271,6 @@ footer {
 
 /* Estilos responsive */
 @media (max-width: 768px) {
-
-    .textos-header h1 {
-        display: flex;
-    }
-
-    
     
     .navbar-nav {
         text-align: center;
